@@ -1,0 +1,37 @@
+HTML
+
+Imagen
+
+
+
+
+
+SUPUESTO PRACTICO:
+
+WEB:
+página usuario
+página admin
+
+Nos va a dar las tablas
+
+Página de interés:
+http://www.generatedata.com/?lang=es
+
+En primer lugar subimos al servidor la base de datos.
+Esto lo hacemos con MyFrontSqL, esto es xq la bdd la tenemos en ACCESS!!
+Creamos una carpeta xa la bdd.
+seleccionamos la carpeta y podremos seleccionar la opción importar access.
+Hay que seleccionar la codificación UTF 8 unicode y todas las carpetas.
+
+Una vez subida debemos abrirla en el "phpmyadmin" y crear las relaciones.
+para ello vamos a la pestaña "mas" y seleccionamos "relaciones".
+
+
+Los campos que vayamos a emplear xa la relación les tendremos q asignar una llave gris (clave o indice secundario).
+
+En este caso:
+- un médico puede tener varios ingresos, su indice será el numero de colegiado.
+- cada paciente tiene un número de ingreso, será el indice el número de ingreso.
+- cada ingreso tiene un paciente y un médico, el número de colegiado y de historial serán indices.
+
+**Cascade: este atributo hace que si borramos un campo eliminaremos tb toda la información relacionada con ese campo.
