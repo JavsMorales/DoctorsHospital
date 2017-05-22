@@ -16,7 +16,7 @@ include 'Header.php';
 	 			 	<h3>Por favor introduzca usuario y contraseña</h3>
 	 			 </label>
 	  					
-	  					<form method="post" name="envio" action="Login.php">
+	  					<form method="post" name="envio" autocomplete="off" action="Login.php">
 							<div class="panel panel-success">
 							    <div class="panel-body">
 								    <div class="col-sm-4">

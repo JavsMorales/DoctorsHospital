@@ -23,6 +23,9 @@ include 'AdminHeader.php';
               <th><h4>Especialidad</h4></th>
               <th><h4>Antigüedad</h4></th>
               <th><h4>Nº Colegiado</h4></th>
+              <th><form name="form1" action="crear_colegiado.php" method="post">
+                  
+                  <input type="submit" class="btn btn-info" name="Nuevo" value="Nuevo/a"></th>
             </tr>
           </thead>
       </div>
@@ -63,7 +66,6 @@ include 'AdminHeader.php';
           <td><form name="form1" action="modificar_colegiado.php" method="post">
                   
                   <input type="submit" class="btn btn-success" name="Modificar" value="Modificar">
-                  </form>
           </td>    
         </tfoot>
     </table>

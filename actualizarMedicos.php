@@ -16,9 +16,10 @@ for ($i= 0; $i<$max; $i++)
 	$Especialidad = $_POST["Especialidad".$i];
 	$Num_Colegiado = $_POST["Num_Colegiado".$i];
 	$Antiguedad = $_POST["Antiguedad".$i];
+	$Imagen = $_POST["Imagen".$i];
 
 //orden para actualizar la información en los diferentes campos, en el campo de la izquierda introducimos el nombre que aparece en la bdd y en el otro el del campo del formulario
-	$sql = "UPDATE medicos SET Nom_Medico = '$Nom_Medico' , Apell_Medico = '$Apell_Medico' , Especialidad = '$Especialidad' , Num_Colegiado = '$Num_Colegiado', Antiguedad = '$Antiguedad' WHERE Num_Colegiado = '$Num_Colegiado';";
+	$sql = "UPDATE medicos SET Nom_Medico = '$Nom_Medico' , Apell_Medico = '$Apell_Medico' , Especialidad = '$Especialidad' , Num_Colegiado = '$Num_Colegiado', Imagen = '$Imagen' WHERE Num_Colegiado = '$Num_Colegiado';";
 
 //Insertamos la orden para que se ejecute la sustitución en la consulta 
 mysqli_query($miconexion, $sql);
